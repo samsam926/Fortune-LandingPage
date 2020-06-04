@@ -1,0 +1,24 @@
+@import '../variablesStyles/variable';
+
+.widgetTabs {
+  justify-content: center;
+  transition: ease-in-out 0.2s;
+
+  a.nav-link {
+    background-color: transparent !important;
+    color: $Secondary_Color !important;
+    border-bottom: 2px solid $Secondary_Color;
+    border-radius: 0px;
+    margin: auto 30px;
+    font-size: 25px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.active {
+      color: $Primary_Color !important;
+      border-bottom: 2px solid $Primary_Color;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import './components/navbar/navbar';
+@import './components/sections/main-slider/mainSlider';
+@import './components/product-item/item';
+@import './components/tabs/tabs';
+@import './components/title/title';
+@import './components/sections/brands/brands';
+@import './components/footer/footer';
+
+@import '../node_modules/slick-carousel/slick/slick.scss';
+@import '../node_modules/slick-carousel/slick/slick-theme.scss';
+@import '../node_modules/react-multi-carousel/lib/styles.css';
+
+body {
+  font-family: 'Cairo', sans-serif !important;
+  color: #000000;
+}
+
+// General Classes //
+.bg-red {
+  background-color: $Primary_Color;
+}
+
+.bg-grey {
+  background-color: $Secondary_Color;
+}
+
+.red {
+  color: $Primary_Color;
+}
+
+.grey {
+  color: $Secondary_Color;
+}
+
+.btn,
+button {
+  &:focus {
+    box-shadow: none !important;
+    text-decoration: none !important;
+    outline: none !important;
+  }
+}
+
+//// General Section Styles ////
+.sectionMargin {
+  margin: 50px auto;
+}

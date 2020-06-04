@@ -1,0 +1,20 @@
+@import '../../variablesStyles/variable';
+
+.brands {
+  margin-top: 50px;
+
+  .brandImageItem {
+    position: relative;
+
+    .brandImage {
+      width: 100%;
+    }
+
+    .brandLogo {
+      width: 180px;
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+    }
+  }
+}

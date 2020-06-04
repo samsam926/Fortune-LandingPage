@@ -1,0 +1,103 @@
+@import '../variablesStyles/variable';
+
+.card.productItem {
+  max-width: 250px;
+  transition: ease-in-out 0.3s;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 25px auto;
+
+  @media (max-width: $breakpoint-tablet) {
+    max-width: 100%;
+  }
+
+  &:hover {
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.16);
+    transition: ease-in-out 0.3s;
+  }
+
+  .titleTag {
+    font-weight: 300;
+    font-size: 20px;
+    color: #000000;
+  }
+
+  .categTag {
+    font-weight: 300;
+    font-size: 18px;
+    color: $Secondary_Color;
+  }
+
+  .priceTage {
+    font-weight: 800;
+    font-size: 18px;
+    color: $Primary_Color;
+  }
+
+  .addToCartBtn {
+    background-color: #E9E9E9;
+    color: $Primary_Color;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: $Primary_Color;
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+
+  button.likeBtn {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    &:focus {
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    &:active {
+      background-color: transparent;
+      border: none;
+    }
+
+    .grey {
+      &:hover {
+        color: $Primary_Color;
+      }
+    }
+  }
+}
+
+.newArrivalSlider {
+  padding: 0px 15px;
+
+  @media (max-width: $breakpoint-tablet) {
+    padding: 0px;
+  }
+
+  .react-multiple-carousel__arrow {
+    min-width: 35px;
+    min-height: 35px;
+    background-color: #d3d3d3;
+
+    &::before {
+      color: $Primary_Color;
+    }
+  }
+
+  .react-multiple-carousel__arrow--left {
+    left: 0px;
+  }
+
+  .react-multiple-carousel__arrow--right {
+    right: 0;
+  }
+}

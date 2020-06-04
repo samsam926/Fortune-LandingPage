@@ -1,0 +1,63 @@
+@import '../../variablesStyles/variable';
+
+.carousel {
+  .sliderImage {
+    img {
+      width: 100%;
+      max-height: 700px;
+
+      @media (max-width: $breakpoint-mobile) {
+        height: 250px;
+      }
+    }
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .carousel-control-prev {
+    left: 100px;
+
+    @media (max-width: $breakpoint-tablet) {
+      left: 5px;
+    }
+  }
+
+  .carousel-control-next {
+    right: 100px;
+
+    @media (max-width: $breakpoint-tablet) {
+      right: 5px;
+    }
+  }
+
+  .carousel-indicators {
+    li {
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+
+      &.active {
+        background-color: $Primary_Color;
+      }
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+    transition: ease-in-out 0.2s;
+    opacity: 0.5;
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url('../../../images/prev.png');
+  }
+
+  .carousel-control-next-icon {
+    background-image: url('../../../images/next.png');
+  }
+}

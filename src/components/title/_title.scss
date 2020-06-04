@@ -1,0 +1,25 @@
+@import '../variablesStyles/variable';
+
+.bg-title {
+  display: inline-block;
+  padding: 6px 19px 6px 29px;
+  border-radius: 38px;
+  background-color: #e9e9e9;
+}
+
+.sectionTitle {
+  font-size: 22px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 5px auto;
+  text-transform: uppercase;
+}
+
+span.titleArrow {
+  margin-left: 15px;
+
+  img {
+    vertical-align: inherit;
+    width: 7px;
+  }
+}
